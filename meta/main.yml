@@ -1,0 +1,23 @@
+galaxy_info:
+  author: Jonatas de Moraes Junior
+  description: PPA Installation of PostgreSQL with remote access enabled. Suited for development, works nicely on Vagrant boxes.
+  role_name: postgresql-dev
+  license: MIT
+  min_ansible_version: 2.9
+
+  platforms:
+  - name: Ubuntu
+    versions:
+    - focal
+    - bionic
+    - xenial
+
+  galaxy_tags:
+    - postgre
+    - postgres
+    - postgresql
+    - development
+    - remote
+    - vagrant
+
+  dependencies: []
