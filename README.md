@@ -27,13 +27,13 @@ Example Playbook
 Default installation
 ```yaml
 roles:
-  - postgresql_dev
+  - honatas.postgresql_dev
 ```
 
 Installs PostgreSQL 11 on Ubuntu 18.04
 ```yaml
 roles:
-  - { role: postgresql_dev, postgresql_version: 11, postgresql_ubuntu_version: bionic }
+  - { role: honatas.postgresql_dev, postgresql_version: 11, postgresql_ubuntu_version: bionic }
 ```
 
 
