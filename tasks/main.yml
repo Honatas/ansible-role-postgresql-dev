@@ -1,22 +1,18 @@
 ---
 - name: Add PostgreSQL apt-key
-  become: yes
   apt_key:
     url: "{{ postgresql_apt_key_url }}"
     state: present
 
 - name: Add PostgreSQL apt repository
-  become: yes
   apt_repository:
     repo: "{{ postgresql_apt_repo }}"
 
 - name: Install PostgreSQL server and command line client
-  become: yes
   apt:
     name: ['postgresql-{{ postgresql_version }}', 'postgresql-client-{{ postgresql_version }}']
 
 - name: Create postgres user
-  become: yes
   user:
     name: postgres
     group: postgres
@@ -24,19 +20,16 @@
     create_home: no
 
 - name: Configuring auth mode for external access
-  become: yes
   lineinfile:
     path: "/etc/postgresql/{{ postgresql_version }}/main/pg_hba.conf"
     line: host all all 0.0.0.0/0 trust
 
 - name: Configuring listen addresses for external access
-  become: yes
   lineinfile:
     path: "/etc/postgresql/{{ postgresql_version }}/main/postgresql.conf"
     line: listen_addresses = '*'
 
 - name: Restart PostgreSQL
-  become: yes
   service:
     name: postgresql
     state: restarted
