@@ -2,7 +2,7 @@ PostgreSQL for Development
 ==========================
 
 [![Travis](https://img.shields.io/travis/honatas/ansible-role-postgresql-dev?style=plastic)](https://travis-ci.org/Honatas/ansible-role-postgresql-dev "View the build status on Travis")
-
+[![coffee](https://img.shields.io/badge/buy%20me%20a-coffee-orange?style=plastic)](https://ko-fi.com/honatas "Buy me a coffee")  
 
 Ansible role for a very basic installation of PostgreSQL better suited for development environments, especially Vagrant boxes. It installs the database and the command-line client, and enables remote access so you can also connect a client from outside the Vagrant machine (like DBeaver from your host machine).  
 
