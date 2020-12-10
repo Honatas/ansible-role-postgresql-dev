@@ -4,7 +4,7 @@ PostgreSQL for Development
 [![GitHub](https://img.shields.io/github/license/honatas/ansible-role-postgresql-dev?style=plastic)](https://github.com/Honatas/ansible-role-postgresql-dev/blob/master/LICENSE)
 [![Travis](https://img.shields.io/travis/honatas/ansible-role-postgresql-dev?style=plastic)](https://travis-ci.org/Honatas/ansible-role-postgresql-dev "View the build status on Travis")
 [![Ansible Quality Score](https://img.shields.io/ansible/quality/48294?style=plastic)](https://galaxy.ansible.com/honatas/postgresql_dev)
-[![coffee](https://img.shields.io/badge/buy%20me%20a-coffee-orange?style=plastic)](https://ko-fi.com/honatas "Buy me a coffee")  
+[![coffee](https://img.shields.io/badge/buy%20me%20a-coffee-brown?style=plastic)](https://ko-fi.com/honatas "Buy me a coffee")  
 
 Ansible role for a very basic installation of [PostgreSQL](https://www.postgresql.org) better suited for development environments, especially [Vagrant](https://www.vagrantup.com) boxes. It installs the database and the command-line client, and enables remote access so you can also connect a client from outside the Vagrant virtual machine (such as [DBeaver](https://dbeaver.io/) from your host machine - just remember to configure port forwarding on your vagrantfile).  
 
